@@ -11,7 +11,7 @@ def main():
     menu = st.selectbox("Menu", ["Manual Koktajli", "Manual Alkoholi", "Piwo", "Wino"], key="menu")
     if menu == "Manual Koktajli":
         st.header("Manual Koktajli")
-        df = pd.read_csv("F:/Barkoszykimanual2/ExternalFIles/koktajle.csv", sep=";", encoding="Windows-1250")
+        df = pd.read_csv("ExternalFIles/koktajle.csv", sep=";", encoding="Windows-1250")
 
         szukaj = st.text_input("Znajdź koktajl", max_chars=25, key="szukaj",
         placeholder="np. Łiski Szałer", value="")
