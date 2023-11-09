@@ -54,11 +54,11 @@ def main():
                         expand.markdown(row["opis"])
                         expand.image("AlcoholImages/" + row["zdjecie"])
                         if row["aromat"] != "0":
-                            expand.markdown(f":blue[Aromat]: {row["aromat"].capitalize()}")
+                            expand.markdown(f":blue[Aromat]: {row['aromat'].capitalize()}")
                         if row["smak"] != "0":
-                            expand.markdown(f":green[Smak]: {row["smak"].capitalize()}")
+                            expand.markdown(f":green[Smak]: {row['smak'].capitalize()}")
                         if row["finisz"] != "0":
-                            expand.markdown(f":violet[Finisz]: {row["finisz"].capitalize()}")
+                            expand.markdown(f":violet[Finisz]: {row['finisz'].capitalize()}")
 
     elif menu == "Piwo":
         st.header("Opis piw")
