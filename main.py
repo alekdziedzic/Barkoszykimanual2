@@ -81,6 +81,11 @@ def main():
                   je okrągły rok. Piwo jest pełne smaków pochodzących z mieszaniny słodów 
                   jęczmiennych i aromatycznego chmielu. <br> <br>
                   Alkohol: 5.2%''', unsafe_allow_html=True)
+        st.subheader("Koźlak")
+        st.write('''Rodzaj mocnego piwa warzonego ze słodu jęczmiennego, najczęściej przy użyciu drożdży dolnej 
+                    fermentacji. Zawiera min. 16% ekstraktu oraz min. 6% alkoholu. Fermentuje i leżakuje dłużej 
+                    niż inne piwa, nawet do 18 tygodni. Polska nazwa koźlak to tłumaczenie niemieckiego słowa 
+                    Bock – kozioł.''', unsafe_allow_html=True)
         st.subheader("Pilsner Urquell")
         st.write('''Prekursor piw typu lager. Tworzony metodą równoległego warzenia. 
                   Swoją wyjątkowość zawdzięcza wielu innowacjom w produkcji piwa, niezmiennym 
@@ -94,6 +99,35 @@ def main():
                   (Czysto, rześko, przyjemnie.)<br> <br>
                   Alkohol: 4.4%
                   ''', unsafe_allow_html=True)
+
+        st.subheader("IPA i APA, co to i czym się różnią?")
+        st.write('''Zarówno APA jak i IPA wywodzą się z tej samej brytyjskiej tradycji piwowarskiej, której kluczowym 
+                elementem jest wykorzystanie podczas produkcji piwa drożdży górnej fermentacji skutkujących bardziej 
+                złożonym profilem smakowym i aromatycznym w porównaniu ze spożywanym u nas na co dzień lagerem. Oba te 
+                style reprezentują piwa powstające na bazie jasnego słodu o słomkowej lub złotej barwie, puszystej i 
+                kremowej pianie, która długo utrzymuje się w szklance – po wyglądzie trudno byłoby je rozróżnić. W obu 
+                wariantach kluczową rolę odgrywa także chmiel – to jego właściwości i ilości decydują o charakterze 
+                tych piw, więc oba te style są mocno związane z piwną rewolucją i nową falą. Jednak podobieństwa na 
+                tym się właściwie kończą.<br> <br>
+                Największa różnica pomiędzy IPA a APA to poziom goryczki. O ile w tym pierwszym stylu zawsze jest 
+                on wysoki lub nawet bardzo wysoki – India Pale Ale to jedno z najmocniej chmielonych piw, o tyle 
+                amerykańska wersja jest pod tym względem znacznie bardziej subtelna. W wypadku IPA wszystko kręci się 
+                wokół chmielu, który powinien być dominujący zarówno w smaku poprzez wyraźną goryczkę, jak i w 
+                aromacie, gdzie pojawiać się mogą chmielowe aromaty o nutach ziemistych, owocowych, ziołowych czy 
+                kwiatowych w zależności od użytej odmiany. APA natomiast jest zdecydowanie bardziej zrównoważonym 
+                stylem, w którym liczy się przede wszystkim doskonałe dopasowanie do siebie poszczególnych elementów 
+                składających się na perfekcyjne doznania podczas degustacji. Oznacza to łagodne nuty zbożowe i słodową 
+                pełnię, uzupełnione bardzo intensywnym i bogatym aromatem chmielowym, zwłaszcza o nutach cytrusowych i 
+                kwiatowych, charakterystycznych dla amerykańskich chmieli oraz umiarkowaną goryczką dobrze 
+                korespondującą z nutami pochodzącymi ze słodu. Wszystkie te elementy dodatkowo są powiązane ze sobą 
+                poprzez delikatne nuty owocowe i ziołowe pochodzące od drożdży górnej fermentacji.<br> <br>
+                Aby ułatwić sobie wybór pomiędzy tymi stylami warto zapamiętać, że IPA będzie bardzo gorzkim piwem o 
+                intensywnym i zróżnicowanym aromacie, z kolei APA będzie idealnie zbalansowane, łagodniejsze i przede 
+                wszystkim będzie raczej chmielem pachnieć niż smakować. Takie rozgraniczenie pomoże nam łatwiej dokonać 
+                wyboru przy barze lub przy sklepowej półce, by delektować się takim piwem, jakie bardziej 
+                nam opowiada.'''
+                 , unsafe_allow_html=True)
+        st.caption("Źródło: birofilia.org")
 
         slide1 = st.expander("Ciężkie słowa (pojęcia dla nerdów)")
 
@@ -286,14 +320,13 @@ def main():
         ''', unsafe_allow_html=True)
         sauvignon.image("Wineimages/białe/sauvignon.jpg")
 
-        trebbiano = st.expander("Gran Sasso Trebbiano d'Abruzzo")
-        trebbiano.write('''Lekkie, orzeźwiające wino o aromatach żółtych owoców (brzoskwinia i nieszpułka, głóg), z 
-        nutami kwiatu pomarańczy. Delikatnie wytrawne, o średnim ekstrakcie. W ustach rześkie, owocowe, świeże, z 
-        mocnym smakiem cytrusów i jabłek. Łagodne, dobrze zrównoważone. Szczególnie dobrze komponuje się z 
-        lekkimi potrawami.<br> <br>
-        :blue[Sugestie kulinarne]: Aperitif, lekkie dania z ryb, sałatki, owoce morza.
+        grigio = st.expander("Guerrieri Rizzardi Pinot Grigio")
+        grigio.write('''Eleganckie, nieco powściągliwe PG z klasycznymi aromatami gruszki i nutą brzoskwini, a także 
+        jabłek, skórki cytryny, suszonej trawę i nieco migdałów. Lekkie, orzeźwiające, mineralne i długie, ale 
+        również o wyrazistym charakterze, wykraczające poza granice „zwykłego”włoskiego Pinot Grigio.<br> <br>
+        :blue[Sugestie kulinarne]: Aperitif, grillowane ryby, kuchnia azjatycka.
         ''', unsafe_allow_html=True)
-        trebbiano.image("Wineimages/białe/trebbiano.jpg")
+        grigio.image("Wineimages/białe/grigio.jpg")
 
         riesling = st.expander('Klaus Meyer Riesling')
         riesling.write('''Żywy, wytrawny Riesling. Cytrusy, ananas i jabłka, podkreślone delikatną nutą siana i akcentem
